@@ -324,105 +324,56 @@
     </section>
 <section class="section form-section" id="request-form">
   <div class="container">
-    <div class="form-shell">
-      <div class="form-shell-glow"></div>
+    <div class="section-head center">
+      <p class="section-tag">Заявка</p>
+      <h2>Оставьте заявку на демонстрацию</h2>
+      <p>
+        Заполните форму, и мы свяжемся с вами для обсуждения концепции внедрения ChekBus.
+      </p>
+    </div>
 
-      <div class="form-layout">
-        <div class="form-intro">
-          <p class="section-tag">Заявка на демонстрацию</p>
-          <h2>Подключитесь к будущему городского транспорта</h2>
-          <p class="form-intro-text">
-            Оставьте заявку, чтобы обсудить внедрение ChekBus, демонстрацию интерфейса
-            и возможности интеграции с системой оплаты проезда.
-          </p>
-
-          <div class="form-feature-list">
-            <div class="form-feature-item">
-              <span class="feature-dot"></span>
-              <span>AI-контроль оплаты в реальном времени</span>
-            </div>
-            <div class="form-feature-item">
-              <span class="feature-dot"></span>
-              <span>Интеграция с цифровой транспортной инфраструктурой</span>
-            </div>
-            <div class="form-feature-item">
-              <span class="feature-dot"></span>
-              <span>Подходит для Smart City и пилотных запусков</span>
-            </div>
-          </div>
-
-          <div class="form-status-card">
-            <div class="status-icon-wrap">
-              <span class="status-pulse"></span>
-              <span class="status-core"></span>
-            </div>
-            <div>
-              <p class="status-label">Статус системы</p>
-              <h3>Демонстрационный модуль активен</h3>
-            </div>
-          </div>
+    <form class="request-form" id="demoForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите имя" required />
         </div>
 
-        <div class="form-card">
-          <div class="form-card-top">
-            <div>
-              <p class="form-mini-label">ChekBus Request</p>
-              <h3>Оставить заявку</h3>
-            </div>
-            <div class="form-badge">AI</div>
-          </div>
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </div>
 
-          <form class="request-form" id="demoForm">
-            <div class="form-grid">
-              <div class="form-group">
-                <label for="name">Ваше имя</label>
-                <input type="text" id="name" name="name" placeholder="Например, Андрей" required />
-              </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Введите email" required />
+        </div>
 
-              <div class="form-group">
-                <label for="phone">Телефон</label>
-                <input type="tel" id="phone" name="phone" placeholder="+7 (700) 000-00-00" required />
-              </div>
-
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="example@mail.com" required />
-              </div>
-
-              <div class="form-group">
-                <label for="company">Компания / организация</label>
-                <input type="text" id="company" name="company" placeholder="Название организации" />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="message">Что вас интересует</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="Напишите, хотите ли вы демонстрацию, пилотный запуск или обсуждение концепции"
-              ></textarea>
-            </div>
-
-            <div class="form-bottom">
-              <button type="submit" class="btn btn-primary form-submit-btn">
-                Отправить заявку
-              </button>
-              <p class="form-note">
-                Отправляя форму, вы подтверждаете интерес к демонстрации решения.
-              </p>
-            </div>
-
-            <p class="form-success" id="formSuccess">
-              ✅ Заявка успешно отправлена. Мы скоро свяжемся с вами.
-            </p>
-          </form>
+        <div class="form-group">
+          <label for="company">Компания / организация</label>
+          <input type="text" id="company" name="company" placeholder="Название компании" />
         </div>
       </div>
-    </div>
+
+      <div class="form-group">
+        <label for="message">Комментарий</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Напишите, что именно вас интересует"
+        ></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+      </div>
+
+      <p class="form-success" id="formSuccess">
+        ✅ Заявка успешно отправлена. Мы скоро свяжемся с вами.
+      </p>
+    </form>
   </div>
-</section>
 </section>
   </main>
 
