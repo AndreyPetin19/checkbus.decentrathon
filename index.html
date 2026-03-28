@@ -395,19 +395,22 @@
     </div>
   </footer>
 <script>
+
   const demoForm = document.getElementById("demoForm");
   const formSuccess = document.getElementById("formSuccess");
 
-  demoForm.addEventListener("submit", function (e) {
-    e.preventDefault();
+  if (demoForm && formSuccess) {
+    demoForm.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    formSuccess.classList.add("show");
-    demoForm.reset();
+      formSuccess.classList.add("show");
+      demoForm.reset();
 
-    setTimeout(() => {
-      formSuccess.classList.remove("show");
-    }, 4000);
-  });
+      setTimeout(() => {
+        formSuccess.classList.remove("show");
+      }, 4000);
+    });
+  }
 </script>
 </body>
 </html>
