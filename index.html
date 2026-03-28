@@ -319,10 +319,62 @@
           Свяжитесь с нами, чтобы обсудить демонстрацию интерфейса, визуальную концепцию
           и дальнейшее развитие проекта.
         </p>
-        <a href="#contact" class="btn btn-primary">Оставить заявку</a>
+       <a href="#request-form" class="btn btn-primary">Оставить заявку</a>
       </div>
     </section>
+<section class="section form-section" id="request-form">
+  <div class="container">
+    <div class="section-head center">
+      <p class="section-tag">Заявка</p>
+      <h2>Оставьте заявку на демонстрацию</h2>
+      <p>
+        Заполните форму, и мы свяжемся с вами для обсуждения концепции внедрения ChekBus.
+      </p>
+    </div>
 
+    <form class="request-form" id="demoForm">
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="name">Ваше имя</label>
+          <input type="text" id="name" name="name" placeholder="Введите имя" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Телефон</label>
+          <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Введите email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="company">Компания / организация</label>
+          <input type="text" id="company" name="company" placeholder="Название компании" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Комментарий</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Напишите, что именно вас интересует"
+        ></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Отправить заявку</button>
+      </div>
+
+      <p class="form-success" id="formSuccess">
+        ✅ Заявка успешно отправлена. Мы скоро свяжемся с вами.
+      </p>
+    </form>
+  </div>
+</section>
   </main>
 
   <footer class="footer" id="contact">
@@ -335,13 +387,27 @@
       </div>
 
       <div class="footer-links">
-        <a href="#">Политика конфиденциальности</a>
-        <a href="#">Условия использования</a>
+        <a href="privacy.html">Политика конфиденциальности</a>
+        <a href="terms.html">Условия использования</a>
         <a href="mailto:info@checkbus.kz">info@checkbus.kz</a>
         <a href="tel:+77000000000">+7 (700) 000-00-00</a>
       </div>
     </div>
   </footer>
+<script>
+  const demoForm = document.getElementById("demoForm");
+  const formSuccess = document.getElementById("formSuccess");
 
+  demoForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    formSuccess.classList.add("show");
+    demoForm.reset();
+
+    setTimeout(() => {
+      formSuccess.classList.remove("show");
+    }, 4000);
+  });
+</script>
 </body>
 </html>
