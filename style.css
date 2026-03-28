@@ -636,3 +636,70 @@ img {
 .hero-card {
   overflow: hidden;
 }
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 0;
+}
+
+.form-group label {
+  color: #dbeafe;
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(96, 165, 250, 0.28);
+  background: rgba(15, 23, 42, 0.9);
+  color: #ffffff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.25s ease;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(191, 219, 254, 0.45);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.14);
+  background: rgba(17, 24, 39, 0.98);
+}
+
+.form-group textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.request-form {
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.form-success {
+  display: none;
+  margin-top: 16px;
+  color: #86efac;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-success.show {
+  display: none;
+}
