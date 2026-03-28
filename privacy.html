@@ -1,11 +1,217 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Политика конфиденциальности</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Политика конфиденциальности — ChekBus</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background:
+        radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.10), transparent 25%),
+        #08111f;
+      color: #ffffff;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .back-link {
+      display: inline-block;
+      text-decoration: none;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(96, 165, 250, 0.25);
+      padding: 12px 18px;
+      border-radius: 14px;
+      transition: 0.25s ease;
+    }
+
+    .back-link:hover {
+      background: rgba(96, 165, 250, 0.12);
+      border-color: rgba(96, 165, 250, 0.5);
+    }
+
+    .page-card {
+      background: rgba(10, 18, 32, 0.92);
+      border: 1px solid rgba(96, 165, 250, 0.14);
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      backdrop-filter: blur(14px);
+    }
+
+    .page-tag {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: #93c5fd;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 14px;
+      line-height: 1.15;
+    }
+
+    .intro {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 17px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+      max-width: 800px;
+    }
+
+    .info-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .info-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 20px;
+      padding: 22px;
+    }
+
+    .info-box h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ffffff;
+    }
+
+    .info-box p,
+    .info-box li {
+      color: rgba(255, 255, 255, 0.76);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    .info-box ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    .footer-note {
+      margin-top: 24px;
+      padding: 18px 20px;
+      border-radius: 18px;
+      background: rgba(96, 165, 250, 0.08);
+      border: 1px solid rgba(96, 165, 250, 0.16);
+      color: #dbeafe;
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .page-card {
+        padding: 24px;
+        border-radius: 22px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .intro {
+        font-size: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Политика конфиденциальности</h1>
-  <p>Ваши данные защищены. Система ChekBus использует данные только для проверки оплаты проезда.</p>
+  <div class="container">
+    <div class="topbar">
+      <div class="logo">ChekBus</div>
+      <a href="index.html" class="back-link">← Назад на сайт</a>
+    </div>
+
+    <div class="page-card">
+      <span class="page-tag">Privacy Policy</span>
+      <h1>Политика конфиденциальности</h1>
+      <p class="intro">
+        ChekBus уважает право пользователей на защиту персональных данных. Настоящая политика
+        описывает общие принципы обработки информации в рамках демонстрационной концепции цифровой
+        системы контроля оплаты проезда.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h2>Какие данные могут использоваться</h2>
+          <p>
+            В рамках демонстрации сервиса могут использоваться контактные данные, указанные в форме
+            заявки, включая имя, номер телефона, адрес электронной почты и комментарий пользователя.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h2>Цель обработки данных</h2>
+          <p>
+            Информация используется исключительно для обратной связи, проведения демонстрации
+            продукта, обсуждения концепции внедрения и коммуникации с заинтересованными сторонами.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h2>Защита информации</h2>
+          <p>
+            Мы стремимся применять разумные технические и организационные меры для защиты данных
+            от несанкционированного доступа, утраты, изменения или распространения.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h2>Передача третьим лицам</h2>
+          <p>
+            Данные не передаются третьим лицам без необходимости, за исключением случаев,
+            предусмотренных законодательством или необходимых для технической работы сервиса.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h2>Права пользователя</h2>
+          <ul>
+            <li>Запросить уточнение информации о своих данных</li>
+            <li>Потребовать обновление или удаление данных</li>
+            <li>Отозвать ранее предоставленное согласие на обработку</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        Если у вас возникли вопросы по обработке данных, вы можете связаться с командой ChekBus
+        через контактные данные, указанные на основном сайте.
+      </div>
+    </div>
+  </div>
 </body>
 </html>
