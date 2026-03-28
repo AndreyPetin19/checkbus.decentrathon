@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChekBus — Контроль оплаты проезда через распознавание лиц</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <div class="logo">ChekBus</div>
+
+      <nav class="menu">
+        <a href="#about">О проекте</a>
+        <a href="#problem">Проблема</a>
+        <a href="#how">Как это работает</a>
+        <a href="#benefits">Преимущества</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-outline">Связаться</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="tag">AI / Smart Transport / Face Recognition</p>
+          <h1>ChekBus</h1>
+          <h2>Система автоматического контроля оплаты проезда в общественном транспорте</h2>
+          <p class="hero-description">
+            Интеллектуальное решение для транспорта Казахстана, которое фиксирует пассажиров при входе,
+            сопоставляет лицо с базой данных и проверяет факт оплаты проезда.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#how" class="btn btn-primary">Смотреть принцип работы</a>
+            <a href="#contact" class="btn btn-secondary">Запросить демонстрацию</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="scan-card">
+            <div class="scan-card-top">
+              <span class="status-dot"></span>
+              <span>Система активна</span>
+            </div>
+
+            <img src="images/hero-bus.jpg.PNG" alt="Автобус ChekBus" class="scan-image" />
+
+            <div class="scan-frame">
+              <div class="scan-line"></div>
+            </div>
+
+            <div class="scan-info">
+              <p>Обнаружен пассажир</p>
+              <span>Проверка личности и статуса оплаты</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-tag">О проекте</p>
+          <h2>Что такое ChekBus</h2>
+          <p>
+            ChekBus — это цифровая система контроля оплаты проезда, устанавливаемая в автобусах.
+            Камера, расположенная в правом верхнем углу салона, фиксирует лицо пассажира при входе,
+            после чего система сопоставляет его с базой данных и проверяет, был ли оплачен проезд.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="info-card">
+            <h3>Автоматизация</h3>
+            <p>
+              Исключение ручного контроля и снижение зависимости от человеческого фактора.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Прозрачность</h3>
+            <p>
+              Более точный контроль пассажиропотока и снижение количества безбилетных поездок.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Технологичность</h3>
+            <p>
+              Использование AI, компьютерного зрения и цифровой идентификации личности.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM -->
+    <section class="section dark-section" id="problem">
+      <div class="container split">
+        <div class="split-text">
+          <p class="section-tag">Проблема</p>
+          <h2>Безбилетный проезд создаёт прямые финансовые потери</h2>
+          <p>
+            В общественном транспорте часть пассажиров не оплачивает проезд. Это приводит к потере доходов,
+            усложняет контроль, увеличивает нагрузку на проверяющих и снижает эффективность всей транспортной системы.
+          </p>
+
+          <ul class="custom-list">
+            <li>Потери выручки перевозчиков</li>
+            <li>Низкая эффективность ручного контроля</li>
+            <li>Отсутствие точной цифровой аналитики</li>
+            <li>Рост нагрузки на персонал и контролёров</li>
+          </ul>
+        </div>
+
+        <div class="split-image-card">
+          <img src="images/problem-transport.jpg.png" alt="Проблема оплаты в автобусе" />
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <div class="container">
+        <div class="section-head center">
+          <p class="section-tag">Как это работает</p>
+          <h2>Пошаговый сценарий работы системы</h2>
+          <p>
+            Ниже показана базовая логика взаимодействия камеры, базы данных и модуля проверки оплаты.
+          </p>
+        </div>
+
+        <div class="steps-vertical">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-content">
+              <div class="step-text">
+                <h3>Сканирование лица</h3>
+                <p>
+                  Камера, установленная в правом верхнем углу автобуса, фиксирует лицо пассажира в момент входа.
+                </p>
+              </div>
+              <div class="step-image">
+                <img src="images/step-1-scan.jpg.jpeg" alt="Сканирование лица в автобусе" />
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-content reverse-mobile">
+              <div class="step-text">
+                <h3>Сопоставление с базой данных</h3>
+                <p>
+                  Система анализирует лицо и пробивает человека через централизованную базу данных для установления личности.
+                </p>
+              </div>
+              <div class="step-image">
+                <img src="images/step-2-database.jpg.PNG" alt="Сопоставление лица с базой данных" />
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-content">
+              <div class="step-text">
+                <h3>Проверка оплаты</h3>
+                <p>
+                  После идентификации система проверяет, был ли оплачен проезд, и определяет текущий статус пассажира.
+                </p>
+              </div>
+              <div class="step-image">
+                <img src="images/step-3-payment.jpg.PNG" alt="Проверка оплаты проезда" />
+              </div>
+            </div>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">04</div>
+            <div class="step-content reverse-mobile">
+              <div class="step-text">
+                <h3>Фиксация результата</h3>
+                <p>
+                  Если оплата отсутствует, система формирует запись, уведомление или другой сценарий реакции в рамках цифрового контроля.
+                </p>
+              </div>
+              <div class="step-image">
+                <img src="images/step-4-result.jpg.PNG" alt="Результат проверки и уведомление" />
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="section dark-section">
+      <div class="container">
+        <div class="section-head center">
+          <p class="section-tag">Технологии</p>
+          <h2>Что лежит в основе ChekBus</h2>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="tech-card">
+            <h3>Computer Vision</h3>
+            <p>Обнаружение и анализ лица пассажира в реальном времени.</p>
+          </article>
+
+          <article class="tech-card">
+            <h3>AI-обработка</h3>
+            <p>Распознавание личности и цифровая проверка соответствий.</p>
+          </article>
+
+          <article class="tech-card">
+            <h3>База данных</h3>
+            <p>Сопоставление с хранящимися цифровыми профилями пользователей.</p>
+          </article>
+
+          <article class="tech-card">
+            <h3>Проверка оплаты</h3>
+            <p>Интеграция с системой фиксации факта оплаты проезда.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFITS -->
+    <section class="section" id="benefits">
+      <div class="container">
+        <div class="section-head center">
+          <p class="section-tag">Преимущества</p>
+          <h2>Почему система может быть полезна транспортной отрасли</h2>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="benefit-card">
+            <h3>Рост собираемости оплаты</h3>
+            <p>
+              Снижение числа пассажиров, которые пользуются транспортом без оплаты проезда.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Меньше ручного контроля</h3>
+            <p>
+              Система работает автоматически и сокращает зависимость от постоянных проверок.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Цифровая аналитика</h3>
+            <p>
+              Возможность собирать данные о пассажиропотоке и строить более точную отчётность.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3>Технологичный имидж</h3>
+            <p>
+              Решение вписывается в концепцию Smart City и современного общественного транспорта.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DASHBOARD -->
+    <section class="section dashboard-section">
+      <div class="container split">
+        <div class="split-text">
+          <p class="section-tag">Интерфейс системы</p>
+          <h2>Пример внутреннего цифрового интерфейса</h2>
+          <p>
+            Операторский интерфейс может отображать входящие события, найденные совпадения,
+            статус оплаты и системные уведомления в режиме реального времени.
+          </p>
+
+          <div class="mini-stats">
+            <div class="mini-stat">
+              <span class="mini-stat-value">24/7</span>
+              <span class="mini-stat-label">Мониторинг</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-value">AI</span>
+              <span class="mini-stat-label">Распознавание</span>
+            </div>
+            <div class="mini-stat">
+              <span class="mini-stat-value">Live</span>
+              <span class="mini-stat-label">Проверка</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dashboard-card">
+          <img src="images/dashboard-ui.jpg.WEBP" alt="Dashboard интерфейс ChekBus" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section">
+      <div class="container cta-box">
+        <p class="section-tag">Демонстрация</p>
+        <h2>Готовы обсудить концепцию внедрения ChekBus</h2>
+        <p>
+          Свяжитесь с нами, чтобы обсудить демонстрацию интерфейса, визуальную концепцию
+          и дальнейшее развитие проекта.
+        </p>
+        <a href="#contact" class="btn btn-primary">Оставить заявку</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer-content">
+      <div>
+        <div class="logo footer-logo">ChekBus</div>
+        <p class="footer-text">
+          Концепт цифровой системы контроля оплаты проезда в общественном транспорте.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Условия использования</a>
+        <a href="mailto:info@chekbus.kz">info@chekbus.kz</a>
+        <a href="tel:+77000000000">+7 (700) 000-00-00</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
